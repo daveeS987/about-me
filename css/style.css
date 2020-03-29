@@ -23,7 +23,7 @@ h2 {
     font-size: 30px;
     font-weight: bold;
     text-align: center;
-    padding: 10px;
+    padding-top: 40px;
 }
 
 p {
@@ -38,4 +38,22 @@ p {
     text-align: center;
     color: pink;
     padding-bottom: 5px;
+}
+
+#jobexp {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: pink
+}
+
+#education {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: pink;
+}
+
+#topten{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: pink;
 }
