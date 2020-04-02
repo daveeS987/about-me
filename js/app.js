@@ -9,17 +9,25 @@ function userName() {
 var name = userName();
 console.log('This is name ' + name);
 
-// // Q1-Do I like to read question
-// var read = prompt(userName + ', do I like to read?').toLowerCase();
-// // console.log(read + 'this is answer for read prompt');
-// if(read === 'yes'){
-//   alert('Correct, ' + userName + '! I like to read.');
-//   correctAnswer ++;
-// } else if(read === 'no'){
-//   alert('Wrong, ' + userName + '. I do like to read.');
-// } else {
-//   prompt('One more time ' + userName + '! Do I like to read?');
-// }
+// Q1-Do I like to read question   
+// We need to add returns to this and figure out whats happening with the invoke functions
+// Lines 4 - 7 are coming up in the alert box
+function read() {
+  var read = prompt(userName + ', do I like to read?').toLowerCase();
+  // console.log(read + 'this is answer for read prompt');
+  if(read === 'yes'){
+    alert('Correct, ' + userName + '! I like to read.');
+    correctAnswer ++;
+    return 'Correct, ' + userName + '! I like to read.'
+  } else if(read === 'no'){
+    alert('Wrong, ' + userName + '. I do like to read.');
+    
+  } else {
+    prompt('One more time ' + userName + '! Do I like to read?');
+  }
+  
+}
+read();
 
 // // Q2-Netflex Question
 // var netflix = prompt(userName + ', do I watch Netflix?').toLowerCase();
