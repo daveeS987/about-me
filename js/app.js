@@ -9,16 +9,14 @@ function userNameQuestion() {
 var userName = userNameQuestion();
 console.log('This is name ' + userName);
 
-// Q1-Do I like to read question   
-// We need to add returns to this and figure out whats happening with the invoke functions
-// Lines 4 - 7 are coming up in the alert box
+// Q1-Do I like to read question
 function read() {
   var read = prompt(userName + ', do I like to read?').toLowerCase();
   // console.log(read + 'this is answer for read prompt');
-  if(read === 'yes'){
+  if (read === 'yes') {
     alert('Correct, ' + userName + '! I like to read.');
-    correctAnswer ++;
-  } else if(read === 'no'){
+    correctAnswer++;
+  } else if (read === 'no') {
     alert('Wrong, ' + userName + '. I do like to read.');
   } else {
     prompt('One more time ' + userName + '! Do I like to read?');
@@ -27,16 +25,19 @@ function read() {
 read();
 
 // // Q2-Netflex Question
-// var netflix = prompt(userName + ', do I watch Netflix?').toLowerCase();
-// // console.log(netflix + 'this is answer for netflix prompt');
-// if(netflix === 'yes'){
-//   alert('Yup, ' + userName + ' . I love me some Netflix!' );
-//   correctAnswer ++;
-// } else if(netflix === 'no'){
-//   alert('Wrong, ' + userName + '! I enjoy watching Netflix.');
-// } else{
-//   prompt('One more time ' + userName + '! Do I watch Netflix?');
-// }
+function netflix() {
+  var netflix = prompt(userName + ', do I watch Netflix?').toLowerCase();
+  // console.log(netflix + 'this is answer for netflix prompt');
+  if (netflix === 'yes') {
+    alert('Yup, ' + userName + ' . I love me some Netflix!');
+    correctAnswer++;
+  } else if (netflix === 'no') {
+    alert('Wrong, ' + userName + '! I enjoy watching Netflix.');
+  } else {
+    prompt('One more time ' + userName + '! Do I watch Netflix?');
+  }
+}
+netflix();
 
 // //Q-3Podcast Question
 // var podcasts = prompt(userName + ', do I listen to podcasts?').toLowerCase();
