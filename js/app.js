@@ -55,16 +55,19 @@ function podcasts() {
 podcasts();
 
 // //Q-4Ferry Question
-// var ferry = prompt(userName + ', do I like to ride ferries?').toLowerCase();
-// // console.log(ferry + 'this is the answer for the ferry prompt');
-// if(ferry === 'yes'){
-//   alert('Yup, ' + userName + '! A ferry ride is always fun.');
-//   correctAnswer ++;
-// } else if (ferry === 'no'){
-//   alert('Wrong, ' + userName + '. I very much like to ride ferries.');
-// } else {
-//   prompt('One more time ' + userName + '! Do I like to ride ferries?');
-// }
+function ferry() {
+  var ferry = prompt(userName + ', do I like to ride ferries?').toLowerCase();
+  // console.log(ferry + 'this is the answer for the ferry prompt');
+  if (ferry === 'yes') {
+    alert('Yup, ' + userName + '! A ferry ride is always fun.');
+    correctAnswer++;
+  } else if (ferry === 'no') {
+    alert('Wrong, ' + userName + '. I very much like to ride ferries.');
+  } else {
+    prompt('One more time ' + userName + '! Do I like to ride ferries?');
+  }
+}
+ferry();
 
 // //Q-5Kalaloch Question
 // var kalaloch = prompt(userName + ', do I like to visit Kalaloch?').toLowerCase();
