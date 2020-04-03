@@ -85,21 +85,23 @@ function kalaloch() {
 kalaloch();
 
 // //Q-6 Numeric Question
-
-// var age = prompt(userName + ', how old am I?');
-// for (var i = 0; i<5; i++ ){
-//   if(age < 30){
-//     age = prompt(userName + ' a little too low. Guess again!');
-//   } else if (age > 30){
-//     age = prompt(userName + ' a little too high. Guess again!');
-//   } else if (age === '30'){
-//     alert(userName + ', yup! Good guess!');
-//     correctAnswer ++; //this line after all correct questions is like a coin in a bucket
-//     break;
-//   } else {
-//     alert(userName + ', you\'re out guesses! Now you\'ll never know!');
-//   }
-// }
+function age() {
+  var age = prompt(userName + ', how old am I?');
+  for (var i = 0; i < 5; i++) {
+    if (age < 30) {
+      age = prompt(userName + ' a little too low. Guess again!');
+    } else if (age > 30) {
+      age = prompt(userName + ' a little too high. Guess again!');
+    } else if (age === '30') {
+      alert(userName + ', yup! Good guess!');
+      correctAnswer++; //this line after all correct questions is like a coin in a bucket
+      break;
+    } else {
+      alert(userName + ', you\'re out guesses! Now you\'ll never know!');
+    }
+  }
+}
+age();
 
 // var faveColor = 0;
 // var faveColorArray = ['orange', 'pink'];
