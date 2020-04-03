@@ -1,13 +1,13 @@
 'use strict';
 
-function userName() {
-  var correctAnswer = 0;
+var correctAnswer = 0;
+function userNameQuestion() {
   var userName = prompt('What is your name');
   // console.log(userName + 'this is the answer for userName prompt');
   return userName;
 }
-var name = userName();
-console.log('This is name ' + name);
+var userName = userNameQuestion();
+console.log('This is name ' + userName);
 
 // Q1-Do I like to read question   
 // We need to add returns to this and figure out whats happening with the invoke functions
@@ -18,14 +18,11 @@ function read() {
   if(read === 'yes'){
     alert('Correct, ' + userName + '! I like to read.');
     correctAnswer ++;
-    return 'Correct, ' + userName + '! I like to read.'
   } else if(read === 'no'){
     alert('Wrong, ' + userName + '. I do like to read.');
-    
   } else {
     prompt('One more time ' + userName + '! Do I like to read?');
   }
-  
 }
 read();
 
