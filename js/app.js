@@ -70,16 +70,19 @@ function ferry() {
 ferry();
 
 // //Q-5Kalaloch Question
-// var kalaloch = prompt(userName + ', do I like to visit Kalaloch?').toLowerCase();
-// // console.log(kalaloch + 'this is the answer to kalaloch question');
-// if(kalaloch === 'yes'){
-//   alert('You guessed it, ' + userName + ' I love to visit Kalaloch.');
-//   correctAnswer ++;
-// } else if( kalaloch === 'no'){
-//   alert('Wrong, ' + userName + '.  I actually really like Kalaloch');
-// }else {
-//   prompt('One more time ' + userName + '! Do I like to visit Kalaloch?');
-// }
+function kalaloch() {
+  var kalaloch = prompt(userName + ', do I like to visit Kalaloch?').toLowerCase();
+  // console.log(kalaloch + 'this is the answer to kalaloch question');
+  if (kalaloch === 'yes') {
+    alert('You guessed it, ' + userName + ' I love to visit Kalaloch.');
+    correctAnswer++;
+  } else if (kalaloch === 'no') {
+    alert('Wrong, ' + userName + '.  I actually really like Kalaloch');
+  } else {
+    prompt('One more time ' + userName + '! Do I like to visit Kalaloch?');
+  }
+}
+kalaloch();
 
 // //Q-6 Numeric Question
 
