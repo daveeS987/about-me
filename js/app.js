@@ -40,16 +40,19 @@ function netflix() {
 netflix();
 
 // //Q-3Podcast Question
-// var podcasts = prompt(userName + ', do I listen to podcasts?').toLowerCase();
-// // console.log(podcasts + 'this is the answer for podcasts prompt');
-// if(podcasts === 'yes'){
-//   alert('Correct ' + userName + '! I like to listen to true crime podcasts.');
-//   correctAnswer ++;
-// } else if(podcasts === 'no'){
-//   alert('Wrong, ' + userName + '. I listen to a lot of podcasts.');
-// } else{
-//   prompt('One more time ' + userName + '! Do I listen to podcasts?');
-// }
+function podcasts() {
+  var podcasts = prompt(userName + ', do I listen to podcasts?').toLowerCase();
+  // console.log(podcasts + 'this is the answer for podcasts prompt');
+  if (podcasts === 'yes') {
+    alert('Correct ' + userName + '! I like to listen to true crime podcasts.');
+    correctAnswer++;
+  } else if (podcasts === 'no') {
+    alert('Wrong, ' + userName + '. I listen to a lot of podcasts.');
+  } else {
+    prompt('One more time ' + userName + '! Do I listen to podcasts?');
+  }
+}
+podcasts();
 
 // //Q-4Ferry Question
 // var ferry = prompt(userName + ', do I like to ride ferries?').toLowerCase();
